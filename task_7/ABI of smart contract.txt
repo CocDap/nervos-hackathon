@@ -1,0 +1,249 @@
+[{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [{
+				"internalType": "bytes",
+				"name": "_signedChoiceHash",
+				"type": "bytes"
+			},
+			{
+				"internalType": "uint128",
+				"name": "_stake",
+				"type": "uint128"
+			}
+		],
+		"name": "depositUserOne",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [{
+			"internalType": "bool",
+			"name": "choice",
+			"type": "bool"
+		}],
+		"name": "depositUserTwo",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "domainSeparator",
+		"outputs": [{
+			"internalType": "bytes32",
+			"name": "",
+			"type": "bytes32"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getChainId",
+		"outputs": [{
+			"internalType": "uint256",
+			"name": "",
+			"type": "uint256"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [{
+				"internalType": "bytes32",
+				"name": "message",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "signature",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "recover",
+		"outputs": [{
+			"internalType": "bytes32",
+			"name": "",
+			"type": "bytes32"
+		}],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [{
+				"internalType": "bool",
+				"name": "choice",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "secret",
+				"type": "string"
+			}
+		],
+		"name": "revealUserOneChoice",
+		"outputs": [{
+			"internalType": "bool",
+			"name": "",
+			"type": "bool"
+		}],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "stake",
+		"outputs": [{
+			"internalType": "uint256",
+			"name": "",
+			"type": "uint256"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "timeout",
+		"outputs": [{
+			"internalType": "bool",
+			"name": "",
+			"type": "bool"
+		}],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "userOneAddress",
+		"outputs": [{
+			"internalType": "address payable",
+			"name": "",
+			"type": "address"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "userOneSignedChoiceHash",
+		"outputs": [{
+			"internalType": "bytes",
+			"name": "",
+			"type": "bytes"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "userTwoAddress",
+		"outputs": [{
+			"internalType": "address payable",
+			"name": "",
+			"type": "address"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "userTwoChoice",
+		"outputs": [{
+			"internalType": "bool",
+			"name": "",
+			"type": "bool"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "userTwoChoiceSubmittedTime",
+		"outputs": [{
+			"internalType": "uint256",
+			"name": "",
+			"type": "uint256"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [{
+				"components": [{
+						"internalType": "bool",
+						"name": "choice",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "secret",
+						"type": "string"
+					}
+				],
+				"internalType": "struct HeadTail.Mail",
+				"name": "mail",
+				"type": "tuple"
+			},
+			{
+				"internalType": "bytes",
+				"name": "signature",
+				"type": "bytes"
+			}
+		],
+		"name": "verify",
+		"outputs": [{
+			"internalType": "address",
+			"name": "",
+			"type": "address"
+		}],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [{
+				"components": [{
+						"internalType": "bool",
+						"name": "choice",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "secret",
+						"type": "string"
+					}
+				],
+				"internalType": "struct HeadTail.Mail",
+				"name": "mail",
+				"type": "tuple"
+			},
+			{
+				"internalType": "bytes",
+				"name": "signature",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "verifyUpdated",
+		"outputs": [{
+			"internalType": "bytes32",
+			"name": "",
+			"type": "bytes32"
+		}],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
